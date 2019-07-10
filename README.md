@@ -1,4 +1,11 @@
-# Ninegagposts
+Ninegagposts
+============================
+
+![PyPI](https://img.shields.io/pypi/v/ninegagposts.svg)
+[![GitHub license](https://img.shields.io/github/license/lucasqm/9gagclient.svg)](https://github.com/lucasqm/9gagclient/blob/master/LICENSE)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ninegagposts.svg)
+
+------------------------------------------------------------------------
 
 This is a python client to get [9Gag](https://9gag.com) posts
 
