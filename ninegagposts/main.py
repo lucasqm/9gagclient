@@ -5,7 +5,7 @@ import logging
 import requests
 from requests.exceptions import HTTPError
 
-__version__ = "0.0.1.2"
+__version__ = "0.0.1.3"
 
 
 class Client(object):
