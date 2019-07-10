@@ -15,7 +15,7 @@ import re
 import os
 from setuptools import find_packages, setup
 
-DEPENDENCIES = ['requests', 're']
+DEPENDENCIES = ['requests', 're', 'logging']
 EXCLUDE_FROM_PACKAGES = ["contrib", "docs", "tests*"]
 CURDIR = os.path.abspath(os.path.dirname(__file__))
 

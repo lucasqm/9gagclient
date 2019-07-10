@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import re
+import logging
 import requests
 from requests.exceptions import HTTPError
 
@@ -67,9 +68,9 @@ class Client(object):
             json_response = response.json()
             return cls._format_response(json_response, url_sufix)
         except HTTPError as http_err:
-            print(f'HTTP error occurred: {http_err}')
+            logging.error('HTTP error occurred: %s', http_err)
         except Exception as err:
-            print(f'Other error occurred: {err}')
+            logging.error('Other error occurred: %s', err)
         return False
 
     @classmethod
