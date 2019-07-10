@@ -5,7 +5,7 @@ import logging
 import requests
 from requests.exceptions import HTTPError
 
-__version__ = "0.0.1.1"
+__version__ = "0.0.1.2"
 
 
 class Client(object):
@@ -17,9 +17,9 @@ class Client(object):
     _hot_type = "type/hot"
     _trending_type = "type/trending"
 
-    @classmethod
-    def __init__(cls):
-        cls.next_cursor = {}
+    # @classmethod
+    # def __init__(cls):
+    #     cls.next_cursor = {}
 
     @classmethod
     def get_posts_by_group(cls, group="default", type="fresh"):
@@ -78,6 +78,6 @@ class Client(object):
         """Format Response Json"""
         if 'data' in response:
             data = response['data']
-            cls.next_cursor[url_sufix] = data["nextCursor"]
+            #cls.next_cursor[url_sufix] = data["nextCursor"]
             return data['posts']
         return False
